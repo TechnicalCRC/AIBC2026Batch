@@ -1,13 +1,57 @@
 .main{
-  background-color:gainsboro;
+  background-color: gainsboro;
+  width: 70%;
+  height: 650px;
+  margin: auto;
+  border:20px solid transparent;
+  border-image: url(../pic/download.jpg) 30 round;
+  /* align-items: center; */
 }
-input[type=text],input[type=password],input[type=email]{
+input[type=text],input[type=email],input[type=password],select{
   width: 100%;
+  margin-bottom: 10px;
 }
-select{
-  width: 100%;
+h1{
+  text-align: center;
+}
+label{
+  font-weight: bolder;
+  color: blue;
+}
+input[type=text]:hover,input[type=password]:hover,input[type=email]:hover,select:hover{
+  background-color: coral;
 }
 
-input[type=text]:hover{
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,select:focus{
+  background-color:aqua;
+}
+legend{
+  color: purple;
+  font-weight: bolder;
+  font-size: 20px;
+}
+fieldset{
+  margin-top: 10px;
+}
+input[type=submit],input[type=reset]{
+  width: 48%;
+  margin-left: 10px;
+  background-color: white;
+  border: 3px solid brown;
+  font-size: 25px;
+  color:brown;
+  float: left;
+  border-radius: 5px;
+}
+
+ul{
+  list-style-type: none;
+  background-color: violet;
+}
+li{
+  display: inline;
   background-color: aqua;
+}
+li:hover{
+  background-color: snow;
 }
