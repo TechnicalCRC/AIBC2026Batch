@@ -1,0 +1,13 @@
+.main{
+  background-color:gainsboro;
+}
+input[type=text],input[type=password],input[type=email]{
+  width: 100%;
+}
+select{
+  width: 100%;
+}
+
+input[type=text]:hover{
+  background-color: aqua;
+}
