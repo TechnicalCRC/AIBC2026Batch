@@ -1,0 +1,28 @@
+p{
+  color:blue;
+}
+.crc{
+  font-size: 40px;
+  color: rgba(31, 24, 232, 0.912);
+}
+
+#ai-b{
+  border: 10px groove green;
+  border-radius: 10px 50px 3px 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: chiller;
+  
+}
+#ai-c{
+  border-top-width: 5px;
+  border-top-color: red;
+  border-top-style: dashed;
+  border-bottom-width: 5px;
+  border-bottom-color:green;
+  border-bottom-style: dotted;
+
+  border-style: dashed solid dotted inset;
+ 
+}
