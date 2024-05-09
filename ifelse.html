@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>if statement</title>
+</head>
+
+<body>
+
+  WAP to check a number is Even or Odd
+  <input type="text" id="t1" placeholder="Enter a number">
+  <button onclick="
+   let val = document.getElementById('t1').value;
+   let res = document.getElementById('result');
+   if(Number(val)%2 == 0)
+    {
+      res.innerText = 'Your Result => Even';
+      res.style.color = 'Green';
+      res.style.backgroundColor = 'yellow';
+    }
+    else
+    {
+      res.innerText = 'Your Result => Odd';
+      res.style.color = 'REd';
+      res.style.backgroundColor = 'purple';
+    }
+  ">Check</button>
+  <h2 id="result">Your Result => </h2>
+  <script>
+
+    // if - else statement
+    // let age = 20;
+    // let msg;
+    // if (age > 18)
+    // {
+    //    msg = 'You can ride a Bike';
+    //   console.log(msg);
+    // }
+    // else{
+    //   msg = 'Kindly use Bicycle';
+    //   console.log(msg);
+    // }
+
+
+    // falsy values
+    // // 0 undefined null NaN false ''
+    // let age=' ';
+    // if (age)
+    //   console.log('You are ok.');
+    // else
+    //   console.log('You are alien ' + age);
+
+    //  if alternatives
+    // ternary 
+
+    let a = 8;
+    let b = 6;
+    let c;
+    c ? d = a : d = b;
+    console.log(d);
+
+    // guard
+    // // 0 false undefined NaN null ''
+    // let age=``;
+    // let final_age = age || 18;
+
+    // console.log(age);
+    // console.log(final_age);
+
+    //  if(final_age)
+    //  console.log('you are human..');
+    // else
+    // console.log('yopu are alien');
+
+    // default
+    // undefined  null
+    let age = null; sw
+    let final_age = age ?? 18;
+
+    console.log(age);
+    console.log(final_age);
+
+    if (final_age)
+      console.log('you are human..');
+    else
+      console.log('yopu are alien');
+
+
+    //console.log(msg);
+  </script>
+
+</body>
+
+</html>
