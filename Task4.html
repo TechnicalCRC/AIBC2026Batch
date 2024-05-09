@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Task 4</title>
+</head>
+
+<body>
+  <style>
+    .btn1 {
+      border: 0;
+      background-color: rgb(102, 231, 102);
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 7px 15px;
+    }
+
+    .btn2 {
+      border: 3px solid black;
+      background-color: rgb(241, 245, 241);
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 8px 45px;
+    }
+  </style>
+
+<script>let count = 0;
+</script>
+<button class="btn1" onclick="
+    count++;
+    let val = document.getElementById('bag');
+    val.innerText = `Your Bag has ${count} items`;
+  ">Add to Bag</button>
+  <button class="btn2" onclick="
+  count--;
+  let val = document.getElementById('bag');
+  val.innerText = 'Your Bag has '  + count + ' items';
+">Move to wishlist</button>
+  <button class="btn1" onclick="
+   count += 2;
+    document.getElementById('bag').innerText = `Your Bag has ${count} items`;
+  ">Add 1+1 sale item</button>
+  <h2 id="bag">Your Bag has 0 items</h2>
+  </body>
+
+</html>
