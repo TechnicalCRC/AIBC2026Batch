@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Table</title>
+</head>
+<body>
+  <h1>WAP to draw Table of a number </h1>
+  <input type="text" id="t1" placeholder="Enter a number" onkeydown="
+    let num = Number(prompt('Enter a number'));  
+    //let num = Number(document.getElementById('t1').value);
+  let val = '';
+   
+   if(event.key === 'Enter')
+    {
+      result.innerHTML='';
+      let c = confirm ('Do you want to draw table');
+      if(c){
+ 
+      for(i=1; i<=10; i++)
+       val += `${num} * ${i} = ${num*i}<br>`;
+
+      result.innerHTML=val;
+    }   
+  }
+">
+  <!-- <button onclick="
+  let num = Number(document.getElementById('t1').value);
+  let val = '';
+  for(i=1; i<=10; i++)
+  val += `${num} * ${i} = ${num*i}<br>`;
+
+   let r = document.getElementById('result');
+   r.innerHTML=val;
+  ">Draw Table</button> -->
+  <!-- <button onclick="
+  let c = confirm ('Do you want to do this');
+  console.log(c);
+  ">click</button> -->
+  <h3 id="result"></h3>
+</body>
+</html>
