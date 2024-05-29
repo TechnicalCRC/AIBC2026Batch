@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Basic Calculator</h1>
+    <div class="main">
+      <input type="text" id="display" readonly>
+      <div class="btncontainer">
+        <button class="mybtn" onclick=" val = ''; txt.value = val;">C</button>
+        <button class="mybtn" onclick=" val = '1'; txt.value += val;">1</button>
+        <button class="mybtn" onclick=" val = '2'; txt.value += val;">2</button>
+        <button class="mybtn" onclick=" val = '3'; txt.value += val;">3</button>
+        <button class="mybtn" onclick=" val = '+'; txt.value += val;">+</button>
+        <button class="mybtn" onclick=" val = '4'; txt.value += val;">4</button>
+        <button class="mybtn" onclick=" val = '5'; txt.value += val;">5</button>
+        <button class="mybtn" onclick=" val = '6'; txt.value += val;">6</button>
+        <button class="mybtn" onclick=" val = '-'; txt.value += val;">-</button>
+        <button class="mybtn" onclick=" val = '7'; txt.value += val;">7</button>
+        <button class="mybtn" onclick=" val = '8'; txt.value += val;">8</button>
+        <button class="mybtn" onclick=" val = '9'; txt.value += val;">9</button>
+        <button class="mybtn" onclick=" val = '*'; txt.value += val;">*</button>
+        <button class="mybtn" onclick=" val = '/'; txt.value += val;">/</button>
+        <button class="mybtn" onclick=" val = '0'; txt.value += val;">0</button>
+        <button class="mybtn" onclick=" val = '.'; txt.value += val;">.</button>
+        <button class="mybtn" onclick=" 
+        val = txt.value;
+        //let s = val.slice(0,-1);
+        let s = val.substring(0,val.length-1);
+        txt.value = s;">x</button>
+        <button class="mybtn" onclick=" val = '**'; txt.value += val;">**</button>
+        <button class="mybtn" onclick=" 
+        val = eval(txt.value); 
+        txt.value = val;">=</button>
+      </div>
+    </div>
+    <script>
+      let txt = document.getElementById('display');
+      let val = '';
+      txt.value = val;
+    </script>
+</body>
+</html>

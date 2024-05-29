@@ -1,0 +1,33 @@
+.main{
+  background-color: burlywood;
+  border: 3px solid brown;
+  width: 220px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+input{
+  width: 92%;
+  height: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 3px;
+}
+.mybtn{
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: bisque;
+  border: 3px solid rgb(62, 168, 49);
+  border-radius: 15px;
+  margin: 5px;
+}
+.btncontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
