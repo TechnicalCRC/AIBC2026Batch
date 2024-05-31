@@ -40,17 +40,135 @@
     // add(4,8);
 
     // function 4
-    function add(num1,num2) {
-      return num1+num2;
-      
+    // function add(num1,num2) {
+    //   return num1+num2;
+    // }
+
+    // console.log(add(2,4));
+    // console.log(add(12,41));
+    // console.log(add(5,3));
+    // console.log(add(7,4));
+    // console.log(add('A','B'));
+    // console.log(add("Ramesh",' Kumar'));
+
+
+    // // function 5
+    // function display(res){
+    //   console.log("Result : " + res);
+    // }
+    // function multiply(num1, num2){
+    //   let result = num1* num2;
+    //   display(result);
+    // }
+    // multiply(3,6);
+
+
+    // function 6
+    // function display(res){
+    //   console.log("Result : " + res);
+    // }
+    // function multiply(num1, num2){
+    //   let result = num1* num2;
+    //    return(result);
+    // }
+    // function sub (num1,num2){
+    //   return num1-num2;
+    // }
+    // display(multiply(3,6));
+    // display(sub(45,2));
+
+    // function expression
+    // function 7
+
+    //    let add=function (a,b){
+    //      let c = a+b;
+    //      console.log(c);
+    //    }
+
+    //    add(2,9);
+    // document.write(add);
+    //    let x = 10;
+    // console.log(x);
+
+
+    // function 8
+    // const add = function (a,b){
+    //   return a+b;
+    // }
+
+    // // add= function(a,b){
+    // //   console.log('hello');
+    // // }
+    // console.log(add(4,6));
+
+    // function 9
+    //  let show=function(res){
+    //   console.log("result : " + res);
+    //  }
+    //  let mul = function(a,b){
+    //   return a*b;
+    //  }
+    //  show(mul(4,9));
+
+
+    // function Hoisting
+    // function 10
+    // show();
+
+    // function show(){
+    //   console.log("Hello me");
+    // }
+
+    // function parameter
+    // function 11
+    // default parameter
+    // let add=function (num1=0,num2=0){
+    //   console.log(num1+num2);
+    //  // console.log('num2 - ' + num2);
+    // }
+
+    // add(4,7);
+    // add(11,3);
+    // add(11,3,4,7,8);
+    // add(3);
+    // add();
+
+    // function 12
+    // let db = function(dob='1-1-2004'){
+    //   console.log(dob);
+    // }
+
+    // db('3-5-2003');
+    // db();
+
+    //function 13
+    // rest paramenter
+
+    //  let add=function(...arr){
+    // document.write("<br>Values :");
+    //     for(i=0;i<arr.length;i++){
+    //      document.write(arr[i] + " ");
+    //     }
+    //  }
+    //  add(2,6);
+    //  add(6,7,5);
+    //  add();
+    //  add(1,2,3,4,5,6);
+
+    // function 14
+    let add = function (a,b,...arr) {
+      document.write("<br>sum :");
+      let s = 0;
+      for (i = 0;i<arr.length; i++)
+        s += arr[i];
+      document.write(s+a+b);
     }
+    add(2, 6);
+    add(6, 7, 5);
+    add();
+    add(1, 2, 3, 4, 5, 6);
 
-    console.log(add(2,4));
-    console.log(add(12,41));
-    console.log(add(5,3));
-    console.log(add(7,4));
-
-</script>
+  </script>
 </body>
 
 </html>
