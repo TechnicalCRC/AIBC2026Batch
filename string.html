@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String</title>
+</head>
+<body>
+
+  <h2>Enter CSV values here</h2>
+  <input type="text" id="txt">
+  <button onclick="show()">click</button>
+
+  <p id="res"></p>
+  <script>
+
+   function show(){
+    let val = document.getElementById('txt').value;
+ let arr = val.split(',');
+
+ let result = document.getElementById('res');
+ for(i=0;i<arr.length;i++)
+ {
+   result.innerHTML += arr[i] + '<br>';
+ }
+
+   }
+
+
+    // String
+    // let str = '2+6';
+    // console.log(str);
+    // console.log(eval(str));
+
+    // let str1 = new String('2+8');
+    // console.log(str1);
+    // console.log(eval(str1));
+    // console.log(eval(str1.valueOf()));
+
+
+    // let str = "Ramesh Kumar";
+
+    // console.log(str);
+    // console.log(str.charAt(5));
+
+    // console.log(str.concat(' Sharma'));
+
+    // console.log(str.indexOf('m'));
+    // console.log(str.lastIndexOf('m'));
+
+    // let str3 = 'hello';
+    // console.log(str3);
+    // str3 = str3 + 'bye';
+    // console.log(str3);
+
+    let str = "Ramesh Kumar";
+
+    console.log(str);
+    console.log(str.search('a'));
+    console.log(str.search('shw'));
+  
+    console.log(str.match('a'));
+
+    console.log(str.replace('m','hi'));
+    console.log(str.replaceAll('m','hi'));
+  
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+
+    console.log(str.substr(0,5));
+    console.log(str.substring(0,5));
+    console.log(str.slice(0,5));
+
+    
+    console.log(str.substr(4,5));
+    console.log(str.substring(4,5));
+
+  console.log(str.substring(6,2));
+  console.log(str.slice(6,2));
+
+  console.log(str.slice(4,-1));
+
+  console.log(str.split());
+  console.log(str.split(''));
+  console.log(str.split('a'));
+  </script>
+  
+</body>
+</html>
