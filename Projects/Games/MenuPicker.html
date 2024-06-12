@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Picker</title>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td>
+        <h2>Menu Picker
+          <br>Lunch Predictor
+        </h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="lunch()">Click to Predict</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p id="res-lunch"></p>
+      </td>
+    </tr>
+  </table>
+  
+<script>
+  
+  let menu = [
+    'Chole Bhature',
+    'Sahi Panner',
+    'Kadhai Panner',
+    'Matar Panner',
+    'Pani Puri',
+    'Rajam Chawal',
+    'Kadhi Chawal',
+    'Pizza',
+    'Rumali Roti',
+    'Matra Kulcha',
+    'Pani 20 rs'
+  ];
+
+  function lunch(){
+    let val= Math.floor(Math.random()*menu.length);
+    let res= document.getElementById('res-lunch');
+
+    res.innerHTML = `Today's Lunch is ${menu[val]}`;
+    res.setAttribute('style','color:red;background-color:yellow;font-size:25px')
+  }
+
+</script>
+
+</body>
+</html>
