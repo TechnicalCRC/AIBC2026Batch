@@ -1,26 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Array in JS</title>
 </head>
+
 <body>
   <script>
     // Array
-    let arr = [1,2,3,4];
+    // let arr = [1,2,3,4];
+    // console.log(arr);
+
+    // let arr1 = [];
+    // arr1[0] = 'Ramesh';
+    // arr1[1] = 'suraj';
+    // console.log(arr1);
+
+    // // let arr1 = new Array(2);
+    // // arr1[0] = 'Ramesh';
+    // // arr1[1] = 'suraj';
+    // // console.log(arr1);
+
+    // let arr2 = new Array('ram','shyam','ravi');
+    // console.log(arr2);
+
+    // let arr = [101,'Ramesh Kumar', 347,'CS-AI',[1,2,3]];
+    // console.log(arr);
+
+    //   let arr = [11,21,3,4];
+    //   console.log(arr[2]);
+    //   console.log(arr[0]);
+    //   console.log(arr[4]);
+
+    //   for(i=0; i<arr.length; i++)
+    //   console.log(i + ' value is ' + arr[i]);
+
+    //   for(i of arr)
+    //   console.log(i);
+    // console.log('');
+
+    // for(i in arr)
+    // console.log(`value at ${i} is ${arr[i]}`);
+
+    // spread
+    //  let arr =[2,4,5,7];
+    //  console.log(arr);
+    //  console.log(Math.max(5,2,8,23,9));
+    //  console.log(Math.max(...arr));
+
+
+    // let arr = ['Ramesh','shyam','ravi','nitin'];
+    // console.log(arr);
+    //    let arr1 = [...arr];
+    //    arr1[1] = 'varun';
+    //    console.log(arr);
+
+    // function me (ar)
+    // {
+    //   ar[2] = 'Raman';
+    // }
+
+    // me(...arr);
+    // console.log(arr);
+
+    // let arr1 = [1,2,3,4];
+    // let arr2 = [7,8,9];
+    // let arr3 = [...arr1,...arr2];
+    // console.log(arr3);
+
+    // let arr = [1,2,3,4];
+    // console.log(arr);
+    // arr.push(10);
+    // console.log(arr);
+    // arr.pop();
+    // console.log(arr);
+    // arr.unshift(67);
+    // console.log(arr);
+    // arr.shift();
+    // console.log(arr);
+
+    // arr.splice(1,2,56,'ramesh',88,true,['a',6,'b',78]);
+    // console.log(arr);
+
+    //let arr = [1,21,13,44];
+
+    // let f = arr.findIndex((val)=>{
+    //   return val>30;
+    // });
+    // console.log(f);
+
+    // let show = function(a){
+    //  console.log(a);
+    // }
+    // arr.forEach((v) =>{
+    //   v = v*10;
+    //   console.log(v);
+    // });
+
+    // let newArr = arr.map((val)=>val*val)
+    // console.log(newArr);
+
+    let arr = [11, 25, 35, 56];
     console.log(arr);
-
-    let arr1 = new Array(2);
-    arr1[0] = 'Ramesh';
-    arr1[1] = 'suraj';
-    console.log(arr1);
-
-    let arr2 = new Array('ram','shyam','ravi');
-    console.log(arr2);
-
-    
+    let fArr = arr.filter((v) =>v % 5 == 0)
+    console.log(fArr);
   </script>
-  
+
 </body>
+
 </html>
