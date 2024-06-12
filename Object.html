@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Objects
+
+    let person = { 'name':'Ramesh', 'age':34, 'grad':'bba', 'conatct':9355454}
+
+    console.log(person);
+
+    console.log(person.age);
+    console.log(person.name);
+    console.log(person.grad);
+
+console.log('');    
+console.log(person['age']);
+console.log(person["name"]);
+console.log(person[`grad`]);
+
+console.log('');
+for(i in person)
+console.log(`${i} : ${person[i]}`);
+
+
+</script>
+  
+</body>
+</html>
