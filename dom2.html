@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dom 2</title>
+</head>
+
+<body>
+  <h1>This is Dom 2</h1>
+
+  <hr>
+  <input type="text" placeholder="Enter todo" id="t1">
+  <button onclick="todo()">Add Todo</button>
+  <hr>
+  <p id="main"></p>
+
+  <script>
+    let todo = () => {
+      let txt = document.getElementById('t1');
+
+      let res = document.getElementById('main');
+      
+      res.innerHTML += `<p>${txt.value} </p>`;
+    }
+  </script>
+</body>
+
+</html>
