@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1> Local Storage</h1>
+  <button onclick="insert()">Click to create local storage</button>
+  <button onclick="select()">Click to show local storage Data</button>
+  <button onclick="update()">Click to update local storage</button>
+  <button onclick="removeName()">Remove name local storage</button>
+  <button onclick="removeAll()">Remove ALL local storage</button>
+  <button onclick="length()">Length</button>
+  <script>
+    function insert() {
+      let name = 'Vipin Kumar';
+      let age = 23;
+      localStorage.setItem('name', name);
+      localStorage.setItem('age', age);
+    }
+
+    let select = () => {
+      console.log('Name : ' + localStorage.getItem('name'));
+      console.log('Age : ' + localStorage.getItem('age'));
+    }
+    let update = () => {
+      let name = 'Abhjeet Sharma';
+      let age = 34;
+      localStorage.setItem('name', name);
+      localStorage.setItem('age', age);
+    }
+    function removeName() {
+      localStorage.removeItem('name');
+    }
+    function removeAll() {
+      localStorage.clear();
+    }
+    function length() {
+      console.log("Total element and key are " + localStorage.length);
+    }
+
+  </script>
+</body>
+
+</html>
