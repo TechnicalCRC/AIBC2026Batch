@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>fetch API</h1>
+  <input type="text" id="name" placeholder="Enter name">
+  <button onclick="gender()">Predict Gender</button>
+
+  <hr>
+   <p id="result"></p>
+  <hr>
+  <script>
+    function gender() {
+      let txt = document.querySelector('#name').value;
+      let url = 'https://api.genderize.io/?name=' + txt;
+      let promise = fetch(url);
+
+      promise
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data.gender);
+          result.innerHTML = `Name : ${data.name}
+          <br> Gender : ${data.gender}
+          <br> Probability : ${data.probability}`;
+        });
+    }
+  </script>
+</body>
+
+</html>
