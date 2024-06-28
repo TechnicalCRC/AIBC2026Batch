@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Events - Mouse event</h1>
+  <p id="para" onmouseover="f1()" onmouseout="f2()">
+    Hello Here
+  </p>
+  <script>
+    function f1(){
+      para.innerHTML = 'Bye Here';
+      para.style.backgroundColor = 'red';
+      para.style.color = 'blue';
+    }
+    function f2(){
+      para.innerHTML = 'Hello Here';      
+      para.style.backgroundColor = 'white';
+      para.style.color = 'black';
+    }
+  </script>
+</body>
+</html>
