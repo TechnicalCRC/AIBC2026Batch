@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    b{
+      border: 2px dotted blue;
+      background-color: papayawhip;
+      color:blue;
+      border-radius: 5px;
+      margin-left: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:white; background-color: blue;
+  border: 5px dotted red; border-radius: 10px; width: 60%;">Todo App</h1>
+  <hr>
+    <input type="text" placeholder="Enter Todo Here" id="todoText"> 
+    <input type="date" id="todoDate">
+    <button onclick="addTodo()">Add Todo</button>
+  <hr>
+
+  <p id="main-container"></p>
+
+  <script>
+    let count = 0;
+    function addTodo(){
+      // Create Parent Element
+      let parentElement = document.createElement('p');
+
+      //Create child elements
+      let todoText = document.createElement('b');
+      let todoDate = document.createElement('b');
+      let todoDelBtn = document.createElement('button');
+
+      // add content to childs
+      todoText.innerHTML = document.querySelector('#todoText').value;
+      todoDate.innerHTML = document.querySelector('#todoDate').value;
+      todoDelBtn.innerHTML = 'Delete';
+
+       let id = 'p' + (++count); // create id to give uniqueness to parent block
+
+       todoDelBtn.setAttribute('onclick',`removeItem(${id})`);
+
+       todoDate.setAttribute('style','background-color:white; border:2px solid green; border-radius:5px;')
+
+       todoDelBtn.setAttribute('style','background-color:blue; border:2px solid green; border-radius:5px; float:right; color:white')
+      
+      // add childs to parent
+      parentElement.append(todoText);
+      parentElement.append(todoDate);
+      parentElement.append(todoDelBtn);
+
+      parentElement.setAttribute('style','background-color:lightgrey; border:2px solid red; border-radius:5px;padding:5px')
+   
+      parentElement.setAttribute('id',id);
+
+      // add parent to main container
+      document.querySelector('#main-container').appendChild(parentElement);
+    }
+
+    function removeItem(id){
+      id.remove();
+    }
+  </script>
+</body>
+</html>
